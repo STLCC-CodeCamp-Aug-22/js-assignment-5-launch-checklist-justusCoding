@@ -84,7 +84,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    };
    
     
-   event.preventDefault();
+
 }
 
 async function myFetch() {
