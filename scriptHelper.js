@@ -29,6 +29,8 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+
+
    //document is basically web page
    //list is for the css page, and is kinda like the result that is printed
    //get element by ID, use it to get the tags for each element, 
@@ -73,16 +75,16 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     cargoStatus.innerHTML = "Cargo mass too heavy for launch";// cargo level too heavy 
     launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
     launchStatus.style.color =  'rgb(199, 37, 78)'; 
-   
    }else{
     fuelStatus.innerHTML = "Fuel level high enough for launch"
     cargoStatus.innerHTML = "Cargo mass low enough for launch"
      launchStatus.innerHTML = 'Shuttle is Ready for Launch';
     launchStatus.style.color = 'rgb(65, 159, 106)';
    }
+   };
    
-
-   }
+    
+   event.preventDefault();
 }
 
 async function myFetch() {
